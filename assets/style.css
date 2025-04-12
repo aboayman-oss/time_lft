@@ -1,0 +1,15 @@
+
+.badge.green {
+  background-color: #2e7d32;
+}
+
+.badge.red {
+  background-color: #c62828;
+}
+
+.actions.sticky {
+  position: sticky;
+  bottom: 0;
+  background: var(--bg);
+  padding-top: 1rem;
+}
