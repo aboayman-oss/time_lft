@@ -1,3 +1,136 @@
+:root {
+  --bg: #121212;
+  --card: #1e1e1e;
+  --primary: #1e88e5;
+  --text: #ffffff;
+  --accent: #90caf9;
+  --error: #ef5350;
+}
+
+[data-theme="light"] {
+  --bg: #f5f5f5;
+  --card: #ffffff;
+  --text: #222222;
+  --primary: #1976d2;
+  --accent: #1976d2;
+}
+
+html {
+  font-size: clamp(14px, 2.5vw, 16px);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  margin-top: 2rem;
+  background-color: var(--card);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  width: 95%;
+  max-width: 420px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+input, button, select {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  margin-top: 0.75rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input, select {
+  background-color: #2c2c2c;
+  color: var(--text);
+}
+
+[data-theme="light"] input,
+[data-theme="light"] select {
+  background-color: #eee;
+  color: #000;
+}
+
+button {
+  background-color: var(--primary);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #1565c0;
+  transform: scale(1.02);
+}
+
+.actions, .block {
+  margin-top: 1.25rem;
+}
+
+.progress {
+  margin-top: 0.5rem;
+  background: #444;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  height: 1rem;
+}
+
+.bar {
+  height: 100%;
+  background-color: var(--accent);
+  width: 0;
+}
+
+.summary {
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.error {
+  color: var(--error);
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.badge {
+  margin-top: 1rem;
+  color: white;
+  font-weight: 600;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+}
 
 .badge.green {
   background-color: #2e7d32;
