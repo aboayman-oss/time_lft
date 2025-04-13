@@ -1,3 +1,4 @@
+
 export function togglePicker() {
   const picker = document.getElementById('datetime-picker');
   if (!picker.hasChildNodes()) {

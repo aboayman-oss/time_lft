@@ -1,3 +1,4 @@
+
 :root {
   --bg: #121212;
   --card: #1e1e1e;
@@ -47,12 +48,6 @@ body {
   text-align: center;
 }
 
-h1 {
-  margin-bottom: 1rem;
-  font-size: 1.75rem;
-  font-weight: 600;
-}
-
 input, button, select {
   width: 100%;
   padding: 0.75rem;
@@ -60,15 +55,6 @@ input, button, select {
   margin-top: 0.75rem;
   border-radius: 0.5rem;
   border: none;
-}
-
-input[type="number"] {
-  -moz-appearance: textfield;
-}
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
 }
 
 input, select {
@@ -123,26 +109,22 @@ button:hover {
   font-size: 0.9rem;
 }
 
-.badge {
-  margin-top: 1rem;
+.save-box {
+  background-color: #2e7d32;
   color: white;
   font-weight: 600;
+  margin-top: 0.5rem;
   padding: 0.5rem;
   border-radius: 0.5rem;
-  display: inline-block;
 }
-
-.badge.green {
-  background-color: #2e7d32;
-}
-
-.badge.red {
+.lost-box {
   background-color: #c62828;
+  color: white;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
 }
-
-.actions.sticky {
-  position: sticky;
-  bottom: 0;
-  background: var(--bg);
-  padding-top: 1rem;
+.actions:last-of-type {
+  margin-bottom: 2rem;
 }
